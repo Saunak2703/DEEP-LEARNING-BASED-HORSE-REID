@@ -1,0 +1,40 @@
+# ============================================================
+# Horse Re-ID Requirements
+# University of Surrey — EEEM004 MSc Dissertation
+# ============================================================
+
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Pretrained models — EfficientNet and Swin Transformer
+timm>=0.9.0
+
+# Scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+
+# Image processing
+Pillow>=9.4.0
+opencv-python>=4.7.0
+
+# Visualisation
+matplotlib>=3.6.0
+
+# Utilities
+tqdm>=4.64.0
+
+# ============================================================
+# INSTALL COMMAND (Windows PowerShell):
+#   pip install -r requirements.txt
+#
+# GPU (CUDA 11.8):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#   pip install timm numpy scipy scikit-learn Pillow opencv-python matplotlib tqdm
+#
+# VERIFY TIMM INSTALL:
+#   python -c "import timm; print(timm.__version__)"
+#   python -c "import timm; m=timm.create_model('efficientnet_b3',pretrained=False); print('EfficientNet OK')"
+#   python -c "import timm; m=timm.create_model('swin_base_patch4_window7_224',pretrained=False); print('Swin OK')"
+# ============================================================

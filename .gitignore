@@ -175,3 +175,6 @@ datasets/*
 *.npz
 *.zip
 horse_dataset_contact_sheet.jpg
+
+segment_horses.py
+segment_horses_v2.py
